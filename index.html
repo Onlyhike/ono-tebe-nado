@@ -14,7 +14,7 @@
       <nav>
         <ul class="header__links-list">
           <li class="no-bullit">
-            <a class="link-no-active" href="#0">главная</a>
+            <a class="link-active" href="#0">главная</a> <!--не понял что требуется, почему только этой ссылке нужно назначить класс активной, видимо чтобы уточнить что она активная несмотря на отсутствие нижнего подчёркивания -->
           </li>
           <li>
             <a href="#0">посмотреть лоты</a>
@@ -50,7 +50,10 @@
             >те<span class="space-around-letter">бе</span></span
           >
           <span class="right-side-aligned-heading"
-            ><span class="space-around-letter">н</span>адо</span
+            ><span class="space-around-letter">н</span>ад<span
+              class="null-spacing-letter"
+              >о</span
+            ></span
           >
         </h1>
         <div class="cover__content">
@@ -65,9 +68,9 @@
       <section class="lots__card-list-section">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card">
+          <li class="lots__card-list-item">
             <a class="lots__card-link" href="#0">
-              <article class="lots__card-list-item film">
+              <article class="lots__card film">
                 <h2 class="lots__card-heading">
                   Фильм режиссёра, который бросил киношколу
                 </h2>
@@ -80,9 +83,9 @@
               </article>
             </a>
           </li>
-          <li class="lots__card">
+          <li class="lots__card-list-item">
             <a class="lots__card-link" href="#0">
-              <article class="lots__card-list-item book">
+              <article class="lots__card book">
                 <h2 class="lots__card-heading">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h2>
@@ -98,9 +101,9 @@
               </article>
             </a>
           </li>
-          <li class="lots__card">
+          <li class="lots__card-list-item">
             <a class="lots__card-link" href="#0">
-              <article class="lots__card-list-item picture">
+              <article class="lots__card picture">
                 <h2 class="lots__card-heading">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h2>
@@ -122,7 +125,7 @@
         <a class="about__logo-link" href="#0">
           <img
             class="about__image"
-            src="/images/logo-white.svg"
+            src="./images/logo-white.svg"
             alt="логотип аукциона"
           />
         </a>
@@ -164,7 +167,7 @@
       <nav>
         <ul class="footer__links-list">
           <li>
-            <a class="link-no-active" href="">главная</a>
+            <a class="link-active" href="#0">главная</a>
           </li>
           <li>
             <a href="#0">посмотреть лоты</a>
@@ -176,13 +179,28 @@
       </nav>
       <ul class="footer__links-list-social">
         <li>
-          <a href="#0"><img src="./images/yt.svg" alt="ютюб" /></a>
+          <a href="#0"
+            ><img
+              class="footer__links-list-social-icon"
+              src="./images/yt.svg"
+              alt="ютюб"
+          /></a>
         </li>
         <li>
-          <a href="#0"><img src="./images/vk.svg" alt="вконтакте" /></a>
+          <a href="#0"
+            ><img
+              class="footer__links-list-social-icon"
+              src="./images/vk.svg"
+              alt="вконтакте"
+          /></a>
         </li>
         <li>
-          <a href="#0"><img src="./images/pinterest.svg" alt="пинтерест" /></a>
+          <a href="#0"
+            ><img
+              class="footer__links-list-social-icon"
+              src="./images/pinterest.svg"
+              alt="пинтерест"
+          /></a>
         </li>
       </ul>
     </footer>
